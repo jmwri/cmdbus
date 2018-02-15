@@ -17,5 +17,5 @@ class PrintToConsoleCommand(Command):
         self.printer_service.print_text(text)
 
 printer_service = PrinterService()
-Bus.dispatch(MyCommand(printer_service, 'some text to print')
+Bus.dispatch(PrintToConsoleCommand(printer_service, 'some text to print')
 ```
