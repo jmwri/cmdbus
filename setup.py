@@ -28,4 +28,7 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.6',
     ],
+    extras_require={
+        'test': ['pytest', 'pytest-watch', 'tox']
+    },
 )
