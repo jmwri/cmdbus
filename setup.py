@@ -29,6 +29,6 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     extras_require={
-        'test': ['pytest', 'pytest-watch', 'tox']
+        'test': ['coverage', 'pytest', 'pytest-watch', 'tox']
     },
 )
