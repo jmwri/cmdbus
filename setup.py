@@ -1,7 +1,7 @@
 from distutils.core import setup
 
 github = 'https://github.com/jmwri/cmdbus'
-version = '0.0.1'
+version = '0.0.2'
 
 setup(
     name='cmdbus',
