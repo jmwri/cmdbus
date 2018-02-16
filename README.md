@@ -2,7 +2,7 @@
 
 ## Using the command bus
 ```
-from cmdbus import Bus, Command
+from cmdbus import cmdbus, Command
 
 class PrinterService:
     def print_text(text):
@@ -17,5 +17,5 @@ class PrintToConsoleCommand(Command):
         self.printer_service.print_text(text)
 
 printer_service = PrinterService()
-Bus.dispatch(PrintToConsoleCommand(printer_service, 'some text to print')
+cmdbus.dispatch(PrintToConsoleCommand(printer_service, 'some text to print')
 ```
