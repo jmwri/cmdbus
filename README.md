@@ -19,3 +19,10 @@ class PrintToConsoleCommand(Command):
 printer_service = PrinterService()
 cmdbus.dispatch(PrintToConsoleCommand(printer_service, 'some text to print')
 ```
+
+## Running tests
+### Install the package with test dependencies
+`pip install -e ".[test]"`
+
+### Run tox
+`tox`
