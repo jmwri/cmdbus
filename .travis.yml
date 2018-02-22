@@ -1,7 +1,15 @@
 language: python
 python:
-  - "3.6"
+- '3.6'
 install:
-  - pip install -e ".[test]"
+- pip install -e ".[test]"
 script:
-  - tox
+- tox
+deploy:
+  provider: pypi
+  user: jmwri
+  password:
+    secure: SkyjZ+MDP150Y/ESXGQ21G5DUHZRol5rop6/yQ7/g2Xq3t9I9mWZVkfVfvnr6ZCh3yK8qeTIWi6AE6sDRtcuqtIAfaW19kSeg7Zfz6F3vXfp8cW3+9FgdJl9jKTmLsmXBOvLplcY/la42ZdJekhab+/1jIDInexCaG6vt1UeX2JdOT9T5AALipt2zYfLEq8aCNTZykAU5tedRC8zHFqX9/ykT8SWY4TRRpsnFIBbEnhHTzwx1GKvj2fWbNfotyqxX2sPc7O5s4waba89dvdAVWVFNf8ocZVETdEyVcesydW8NkYDH1Jvx1RKoXeFWr0aSoLAhrNCULLjuml0lWwiO92yUDUM5AA34XbalSaiDFqNwlBAu7ZlJhR19CKVkTPKyVSnswEuoKSL9rVq8OdyknoghnkKZ53o88LUH73xYZn1M/UxDPtRHK2MpcFAwV+BJ+50k8D0mkcGnBo8Cb0ved/Hrz29KEMPhkxrW1j7HhGOXlwbT+NHHZlh/n776hsW0CYqJ8Q9tkmPCEpidcVPk0qz5SRleqG129ZMasOaxgoESchHpNVMKiOIXEpcPnUna2kQaXIsXMJBGtck3+vzmGOoYARjR4YLtOmfFQ6FlPrVdNyav8sZFZYA0ihwmroM5hwY+4cRU85oYJbDSsUVEtEfN1OmY9k6k5NCT4PmcZ4=
+  on:
+    tags: true
+    branch: master
